@@ -14,7 +14,6 @@ function Board({ name, color }) {
 
   return (
     <>
-  
       <div>
         <h2>{name}</h2>
         {/* 컴포넌트의 프롭 */}
