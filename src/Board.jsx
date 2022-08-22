@@ -1,16 +1,15 @@
-import React, { useState } from 'react';
 import Dice from './Dice';
-import Button from './Button';
 
 // 1부터 n까지 랜덤하게 숫자를 뽑아주는 함수
-const random = n => {
-  return Math.ceil(Math.random() * n);
-};
 
-function Board({ name, color }) {
+function Board({ name, color, gameHistory }) {
   // const [num, setNum] = useState(1);
   // const [sum, setSum] = useState(0);
   // const [gameHistory, setGameHistory] = useState([]);
+
+  // a || b => a가 truthy일 경우 b값은 무시 아니면 그 반대 (falsy : null/NaN/0/빈문자열/undefined)
+  const num = gameHistory[(gameHistory.length - 1)] || 1;
+  const sum = gameHistory.reduce((a, b) => a + b, 0);
 
   return (
     <>
