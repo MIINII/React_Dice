@@ -1,0 +1,21 @@
+.BoardWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 15.625rem;
+  background-color: #272b38;
+  border-radius: .625rem;
+  padding: 1.25rem;
+}
+
+.Name {
+  font-size: 1rem;
+  color: #999ca7;
+}
+
+.TotalScore,
+.Record {
+  color: #999ca7;
+  margin-top: 2.5rem;
+}
